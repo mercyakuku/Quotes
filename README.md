@@ -20,7 +20,7 @@ https://mercyakuku.github.io/Quotes/
 For a collaborator to open this page, he or she is required to:
 * Open Terminal {Ctrl+Alt+T}
 
-* git clone https://github.com/mercyakuku/Delani-Studio
+* git clone https://mercyakuku.github.io/Quotes/ 
 
 * cd Delani-Studio
 
