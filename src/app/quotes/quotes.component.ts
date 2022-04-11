@@ -9,7 +9,7 @@ export class QuotesComponent implements OnInit {
     quotes: Quotes[] = [
       new Quotes(1, 'First Quote',  0,0), 
       new Quotes(2, 'Second Quote', 0,0),
-      new Quotes(1, 'Third Quote',  0,0),
+      new Quotes(3, 'Third Quote',  0,0),
     ]
   constructor() { }
 
