@@ -14,6 +14,7 @@ This project is of an appplication of Quotes that enables a user to create a new
 * CSS
 
 ## Live Page
+https://mercyakuku.github.io/Quotes/
 
 ## Setup/Installation Requirements
 For a collaborator to open this page, he or she is required to:
