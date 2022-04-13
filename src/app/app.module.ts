@@ -8,6 +8,8 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { HighlightDirective } from './highlight.directive';
 import { FormComponent } from './form/form.component';
 import { ComponentsComponent } from './components/components.component';
+import { QuotelistComponent } from './quotelist/quotelist.component';
+import { DateCountPipe } from './date-count.pipe';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { ComponentsComponent } from './components/components.component';
     HighlightDirective,
     FormComponent,
     ComponentsComponent,
+    QuotelistComponent,
+    DateCountPipe,
 
   ],
   imports: [

@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="all-cards ">
+                <div *ngFor="let quote of quote; let i = index" class="mt-3">
+                    <ul >
+                        <li >
+                            <p class="card-title" >Written by:<br>{{quote.name}}</p>
+                            <p appHighlight *ngIf="highest()=== quote.upvotes && quote.upvotes>0">The quote:<br>{{quote.quote}}</p>
+
+                        </li>
+                        <br>
+                        <button class="btn-primary" (click)='toggleDetails(i)'>More Options</button>
+                        <div>
+                        <app-quotedetails *ngIf="quote.showDescription"[quote]="quote" (isComplete) = 'deleteQuote($event,i)'></app-quotedetails>
+       
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+            <div class="col-sm-4">
+                <div class="card ">
+                    <div class="card-body">
+                        <app-form (add)='addQuote ($event)'></app-form>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+</div>

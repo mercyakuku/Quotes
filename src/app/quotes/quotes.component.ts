@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs';
 import { Quotes } from '../quotes';
+import { faThumbsUp } from '@fontawesome/free-solid-svg-icons';
+import { faThumbsDown } from '@fontawesome/free-solid-svg-icons';
+import { faTrashCan } from '@fontawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-quotes',
   templateUrl: './quotes.component.html',
