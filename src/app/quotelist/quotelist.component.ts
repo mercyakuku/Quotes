@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Quotes } from '../quotes';
 
 @Component({
   selector: 'app-quotelist',
@@ -8,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class QuotelistComponent implements OnInit {
   
   quote: Quotes [] =[
-    new Quotes(1,'Gabby','Jodi Picoult',"You can always edit a bad page. You can't edit a blank page.",new Date(2022,4,1),0,0),
-    new Quotes(2,'Ryan','Maya Angelou',"There is no greater agony than bearing an untold story inside you.",new Date(2021,4,5),0,0),
-    new Quotes(3,'Reynard','Ray Bradbury','You fail only if you stop trying',new Date(2020,4,12),0,0)
+    new Quotes(1,'Mercy','CAMILLA EYRING KIMBALL',"You do not find the happy life. You make it.",new Date(2022,4,10),0,0),
+    new Quotes(2,'Beth','LOUISE SMITH',"You can't reach for anything new if your hands are full of yesterday's junk.",new Date(2022,4,10),0,0),
+    new Quotes(3,'Morvine','JOHN WOODEN',"Make each day your masterpiece",new Date(2022,4,10),0,0)
   ];
 
   get sortedQuoty(){

@@ -1,9 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { map } from 'rxjs';
 import { Quotes } from '../quotes';
-import { faThumbsUp } from '@fontawesome/free-solid-svg-icons';
-import { faThumbsDown } from '@fontawesome/free-solid-svg-icons';
-import { faTrashCan } from '@fontawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-quotes',
@@ -11,14 +9,7 @@ import { faTrashCan } from '@fontawesome/free-solid-svg-icons';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
-    // quotes: Quotes[] = [
-    //   new Quotes(1, 'First Quote',  0,0), 
-    //   new Quotes(2, 'Second Quote', 0,0),
-    //   new Quotes(3, 'Third Quote',  0,0),
-    // ]
 
-    // array: number[] = this.quotes.map(quote=>quote.upvotes)
-    // highest = Math.max(...this.array)
   constructor() { }
   @Input () quote! : Quotes;
   @Output () isComplete = new EventEmitter<boolean>();
@@ -40,11 +31,16 @@ export class QuotesComponent implements OnInit {
 
   
 
-  faThumbsUp = faThumbsUp;
-  faThumbsDown = faThumbsDown;
-  faTrashCan = faTrashCan;
 
   ngOnInit(): void {
   }
 
 }
+    // quotes: Quotes[] = [
+    //   new Quotes(1, 'First Quote',  0,0), 
+    //   new Quotes(2, 'Second Quote', 0,0),
+    //   new Quotes(3, 'Third Quote',  0,0),
+    // ]
+
+    // array: number[] = this.quotes.map(quote=>quote.upvotes)
+    // highest = Math.max(...this.array)

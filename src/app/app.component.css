@@ -1,0 +1,8 @@
+body{
+    text-decoration: none;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(../assets/quotes.jpeg);
+    background-image: no-repeat;
+    background-size: cover;
+}
